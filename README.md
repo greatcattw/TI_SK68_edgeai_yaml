@@ -7,6 +7,8 @@ Then test by command line
 /opt/edgeai-gst-apps/apps_python/app_edgeai.py -n -v /opt/edgeai-gst-apps/tests/t1/ONR-OD-8420.yaml  
 or  
 /opt/edgeai-gst-apps/apps_cpp/bin/Release/app_edgeai -n -v /opt/edgeai-gst-apps/tests/t1/ONR-OD-8420.yaml  
-
+  
 ![pic](pic/demo1.jpg)<br><br><br> 
+
+These yaml file need  HDMI monitor (1920x1080) and Logi C270 USB camera (1280x720)  
 
