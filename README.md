@@ -27,3 +27,8 @@ TFL-SS-2580-deeplabv3_mobv2-ade20k32-mlperf-512x512
 TVM-CL-3090-mobileNetV2-tv                                           
 TVM-OD-5120-ssdLite-mobDet-DSP-coco-320x320                          
 TVM-SS-5710-deeplabv3lite-mobv2-cocoseg21-512x512
+  
+## note 2, offical demo
+/etc/init.d/edgeai-launcher.sh stop  
+cd /opt/edgeai-gst-apps/tests/  
+sh test_all_models.sh  
