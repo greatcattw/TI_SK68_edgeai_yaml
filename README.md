@@ -32,3 +32,16 @@ TVM-SS-5710-deeplabv3lite-mobv2-cocoseg21-512x512
 /etc/init.d/edgeai-launcher.sh stop  
 cd /opt/edgeai-gst-apps/tests/  
 sh test_all_models.sh  
+
+## note 3, other reference  
+systemctl list-units --type=service  
+...  
+  docker.init.service                  loaded active exited  LSB: start and stop docker                                               
+  docker.service                       loaded active running Docker Application Container Engine                                      
+  edgeai-init.service                  loaded active running EdgeAI OOB demos  
+...  
+  
+/etc/systemd/system/edgeai-init.service  
+ExecStartPre=-/etc/init.d/edgeai-launcher.sh kill_weston  
+ExecStart=/etc/init.d/edgeai-launcher.sh start  
+ExecStopPost=/etc/init.d/edgeai-launcher.sh stop  
