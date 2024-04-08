@@ -1,10 +1,15 @@
 # TI_SK68_edgeai_yaml  
 For study/develop TI edge AI wiht am68a/am62a/TDA4VM   
+Test is ok with am68a/SDK9.1/USB camera Logi C270
+
 The config file for app_edgeai.py and app_edgeai  
 Copy the yaml file to /opt/edgeai-gst-apps/tests/t1/  
+
+Stop demo
+/etc/init.d/edgeai-launcher.sh stop
  
 Then test by command line  
-/opt/edgeai-gst-apps/apps_python/app_edgeai.py -n -v /opt/edgeai-gst-apps/tests/t1/ONR-OD-8420.yaml  
+/opt/edgeai-gst-apps/apps_python/app_edgeai.py -n -v /opt/edgeai-gst-apps/tests/t1/ONR-OD-8200.yaml  
 or  
 /opt/edgeai-gst-apps/apps_cpp/bin/Release/app_edgeai -n -v /opt/edgeai-gst-apps/tests/t1/ONR-OD-8420.yaml  
   
